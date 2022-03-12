@@ -1,0 +1,61 @@
+{
+	"menus": [
+		{
+			"menuid": 1,
+			"name": "Guac de la Costa",
+			"desc": "tortillas de maïs, fruit de la passion, mango",
+			"N": "Y",
+			"D": "Y",
+			"rating": "5.0 (200+)",
+			"amount": "120"
+		},{
+			"menuid": 2,
+			"name": "Chicharron y Cerveza",
+			"desc": "Cerveza citron vert / Corona sauce",
+			"N": "Y",
+			"D": "N",
+			"rating": "5.0 (200+)",
+			"amount": "100"
+		},{
+			"menuid": 3,
+			"name": "Chicken y Cerveza",
+			"desc": "Chicken citron vert / Chicken sauce",
+			"N": "Y",
+			"D": "N",
+			"rating": "5.0 (200+)",
+			"amount": "150"
+		},{
+			"menuid": 4,
+			"name": "Chicken Tikka",
+			"desc": "Chicken Tikka vert / Chicken Tikka",
+			"N": "Y",
+			"D": "N",
+			"rating": "5.0 (200+)",
+			"amount": "60"
+		},{
+			"menuid": 5,
+			"name": "Beef Tikka Biriyani",
+			"desc": "Beef Tikka Biriyani / Tomato sauce",
+			"N": "Y",
+			"D": "N",
+			"rating": "5.0 (200+)",
+			"amount": "100"
+		},{
+			"menuid": 6,
+			"name": "Beef  Biriyani",
+			"desc": "Dum Beef  Biriyani ",
+			"N": "Y",
+			"D": "N",
+			"rating": "5.0 (200+)",
+			"amount": "140"
+		},{
+			"menuid": 7,
+			"name": "Chicken  Biriyani",
+			"desc": "Dum Chicken Biriyani ",
+			"N": "Y",
+			"D": "N",
+			"rating": "5.0 (200+)",
+			"amount": "120"
+		}
+	]
+}

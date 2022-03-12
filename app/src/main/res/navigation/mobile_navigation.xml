@@ -1,0 +1,54 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+
+
+    <action
+        android:id="@+id/action_global_to_internetFragment"
+        app:destination="@id/internetFragment"
+        app:popUpTo="@id/mobile_navigation"
+        app:popUpToInclusive="false" />
+
+    <fragment
+        android:id="@+id/internetFragment"
+        tools:layout="@layout/fragment_internet"
+        android:name="com.machine.restaurants.internet.InternetFragment"
+        android:label="InternetFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.machine.restaurants.basket.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.machine.restaurants.basket.ui.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <argument
+            android:name="rest"
+            app:argType="com.machine.restaurants.basket.ui.home.model.Restaurant"
+            />
+        <argument
+            android:name="dataCount"
+            app:argType="integer"
+            app:nullable="false"
+            />
+        <action
+            android:id="@+id/action_menuFragment_to_reviewOrderFragment"
+            app:destination="@id/reviewOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewOrderFragment"
+        android:name="com.machine.restaurants.basket.ui.revieworder.ReviewOrderFragment"
+        android:label="fragment_review_order"
+        tools:layout="@layout/fragment_review_order" />
+
+
+</navigation>

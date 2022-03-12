@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Headline3 -->
+  <style name="TextAppearance.Rest.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+    <item name="fontFamily">@font/montserratmedium</item>
+    <item name="android:textSize">48sp</item>
+
+    <item name="lineHeight">64sp</item>
+    <item name="android:letterSpacing">0.0</item>
+  </style>
+
+  <style name="TextAppearance.Rest.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+    <item name="fontFamily">@font/montserrat_semi_bold</item>
+    <item name="android:textSize">34sp</item>
+
+    <item name="lineHeight">48sp</item>
+    <item name="android:letterSpacing">0.0075</item>
+  </style>
+
+  <style name="TextAppearance.Rest.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+    <item name="fontFamily">@font/montserrat_semi_bold</item>
+    <item name="android:textSize">24sp</item>
+
+    <item name="lineHeight">36sp</item>
+    <item name="android:letterSpacing">0.0</item>
+  </style>
+
+  <style name="TextAppearance.Rest.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+    <item name="fontFamily">@font/montserratmedium</item>
+    <item name="android:textSize">22sp</item>
+
+    <item name="lineHeight">32sp</item>
+    <item name="android:letterSpacing">0.0</item>
+  </style>
+
+
+  <style name="TextAppearance.Rest.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+    <item name="fontFamily">@font/montserratmedium</item>
+    <item name="android:textSize">14sp</item>
+
+    <item name="lineHeight">20sp</item>
+    <item name="android:letterSpacing">0.0357</item>
+  </style>
+
+  <!-- Body2 -->
+  <style name="TextAppearance.Rest.Body2" parent="TextAppearance.MaterialComponents.Body2">
+    <item name="fontFamily">@font/montserrat_bold</item>
+    <item name="android:textSize">14sp</item>
+
+    <item name="lineHeight">20sp</item>
+    <item name="android:letterSpacing">0.0</item>
+  </style>
+
+    <!-- Body2 -->
+
+  <!-- Caption -->
+  <style name="TextAppearance.Rest.Caption" parent="TextAppearance.MaterialComponents.Caption">
+    <item name="fontFamily">@font/montserrat_regular</item>
+    <item name="android:textSize">12sp</item>
+
+    <item name="lineHeight">20sp</item>
+    <item name="android:letterSpacing">0.05835</item>
+  </style>
+
+</resources>

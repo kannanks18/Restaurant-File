@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/rest_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvN"
+                    style="@style/TextAppearance.Rest.Headline3"
+                    android:layout_width="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/outlined_background"
+                    android:gravity="center"
+                    android:text="N"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/decrementCount"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvD"
+                    style="@style/TextAppearance.Rest.Headline3"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/outlined_background"
+                    android:gravity="center"
+                    android:text="D"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/decrementCount"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/menuItemsauce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="start|center"
+                android:padding="5dp"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/menuItemName"
+                app:layout_constraintTop_toBottomOf="@+id/menuItemName"
+                tools:text="Gausc jinannanna dzdxvxvzxvzzvzvzxvvvvzvzvzvzvvvvvvzvv" />
+
+            <TextView
+                android:id="@+id/menuItemName"
+                style="@style/TextAppearance.Rest.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="5dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Gausc jinannanna" />
+
+            <TextView
+                android:id="@+id/restAmount"
+                style="@style/TextAppearance.Rest.Headline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/menuItemsauce"
+                app:layout_constraintTop_toBottomOf="@+id/menuItemsauce"
+                tools:text="100" />
+
+            <ImageView
+                android:id="@+id/messageiv"
+                style="@style/TextAppearance.Rest.Headline3"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+
+                android:src="@drawable/message"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/restAmount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menuItemsauce"
+                tools:text="100" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/outlined_background_add"
+                app:layout_constraintBottom_toBottomOf="@+id/menuItemName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/menuItemName">
+
+                <ImageView
+                    android:id="@+id/decrementCount"
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|start"
+                    android:src="@drawable/ic_baseline_remove_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/grey_700" />
+
+                <TextView
+                    android:id="@+id/countText"
+                    style="@style/TextAppearance.Rest.Headline3"
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/decrementCount"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1" />
+
+                <ImageView
+                    android:id="@+id/incrementCount"
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/countText"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/grey_700" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Add"
+                android:textColor="@color/blue_800"
+                android:visibility="gone"
+                app:background="@drawable/outlined_background_add"
+                app:backgroundTint="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/menuItemName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/menuItemName" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_100"
+                app:layout_constraintTop_toBottomOf="@+id/restAmount" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
