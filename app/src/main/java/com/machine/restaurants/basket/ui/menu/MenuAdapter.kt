@@ -2,6 +2,7 @@ package com.machine.restaurants.basket.ui.menu
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.machine.restaurants.basket.local.Order
 import com.machine.restaurants.databinding.LayoutmenusBinding
@@ -69,11 +70,16 @@ class MenuAdapter(private val listener: OnItemClickListener) : RecyclerView.Adap
                 listener.onAddClick(menuItem)
                 row_index=position
             })
-            binding.incrementCount.setOnClickListener(View.OnClickListener {
+
+            binding.incrementCount.setOnClickListener(View.OnClickListener {v->
                 val n = menuItem.food.quantity
-                binding.countText.text = (n+1).toString()
-                listener.onIncrementClick(menuItem)
-                row_index=position
+                if(n>=20){
+                    Toast.makeText(v.context,"Max Reach Exceeds", Toast.LENGTH_LONG).show()
+                }else {
+                    binding.countText.text = (n + 1).toString()
+                    listener.onIncrementClick(menuItem)
+                    row_index = position
+                }
             })
             binding.decrementCount.setOnClickListener(View.OnClickListener {
                 val n = menuItem.food.quantity
